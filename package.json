@@ -1,0 +1,13 @@
+{
+  "name": "swag-tests",
+  "description": "Cypress e2e tests for Swag Labs web app",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "author": "Dmitrii Bormotov",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^10.9.0"
+  }
+}
