@@ -1,6 +1,6 @@
 import Page from './page'
 
-class AuthPage extends Page {
+export const AuthPage = new class extends Page {
   get inputUsername() {return cy.get('[data-test="username"]')}
   get inputPassword() {return cy.get('[data-test="password"]')}
   get buttonLogIn() {return cy.get('[data-test="login-button"]')}
@@ -16,5 +16,3 @@ class AuthPage extends Page {
     this.buttonLogIn.click()
   }
 }
-
-export default new AuthPage()

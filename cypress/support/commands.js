@@ -1,4 +1,4 @@
-import AuthPage from '../pages/auth.page'
+import {AuthPage} from '../pages'
 
 Cypress.Commands.add('login', (username, password) => {
   AuthPage.open()

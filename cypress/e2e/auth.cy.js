@@ -1,5 +1,4 @@
-import AuthPage from '../pages/auth.page'
-import ProductsPage from '../pages/products.page'
+import {AuthPage, ProductsPage} from '../pages'
 import user from '../fixtures/user.json'
 import error from '../fixtures/error.json'
 
