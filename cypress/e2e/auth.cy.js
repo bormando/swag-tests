@@ -1,4 +1,5 @@
 import AuthPage from '../pages/auth.page'
+import ProductsPage from '../pages/products.page'
 import user from '../fixtures/user.json'
 import error from '../fixtures/error.json'
 
@@ -9,8 +10,8 @@ describe('Authentication', () => {
 
   it('With existing credentials', () => {
     AuthPage.logIn(user.username, user.password)
-    cy.location('pathname')
-      .should('include', 'inventory')
+    ProductsPage.path
+      .should('eq', '/inventory.html')
   })
 
   it('With non-existing credentials', () => {
