@@ -1,6 +1,5 @@
 import user from '../fixtures/user.json'
-import ProductsPage from '../pages/products.page'
-import CartPage from '../pages/cart.page'
+import {ProductsPage, CartPage} from '../pages'
 
 describe('Items', () => {
   beforeEach(() => {
